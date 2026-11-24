@@ -15,7 +15,7 @@ https://ymalhan0.github.io/portfolio-23/ until those pages are rebuilt here.
 - `assets/YM_Resume.pdf` – resume linked from "View my resume"
 
 ## Notes
-- The Compliance pages include `<meta name="robots" content="noindex">` so search engines skip them.
+- Every page has `<meta name="robots" content="noindex, nofollow, noarchive">` so search engines don't list the site. Don't add a robots.txt that blocks crawling: crawlers need to load the pages to see this tag.
 - Fonts load from Google Fonts (Bricolage Grotesque, Inter, Caveat).
 
 ## Publish on GitHub Pages
