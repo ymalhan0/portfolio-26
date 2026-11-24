@@ -4,8 +4,7 @@ Plain HTML/CSS site. No build step: open `index.html` in a browser to preview.
 
 ## Pages
 - `index.html` – home (binder-paper intro + project cards)
-- `compliance.html` – Utility Regulatory Compliance, part 1
-- `compliance-2.html` – Utility Regulatory Compliance, part 2 (agentic work)
+- `compliance.html` – Utility Regulatory Compliance case study (one scrolling page; the side nav highlights the current section)
 
 Billing, Support and Bundling cards (and "About me") link to the current site at
 https://ymalhan0.github.io/portfolio-23/ until those pages are rebuilt here.
