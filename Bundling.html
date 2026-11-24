@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+
+    <link rel="icon" type="image/png" href="./Gifs&Icons/grundLogo.png" />
+    <title>Yukti's UX Portfolio</title>
+
+
+    <meta charset="utf-8">
+
+
+    <link rel="stylesheet" href="./css/Landing.css">
+    <link rel="stylesheet" href="./css/Work.css">
+    <link rel="stylesheet" href="./css/bulma.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <!-- Page Header -->
+
+    <div class="header">
+        <a href="index.html"><img src="./Gifs&Icons/YM.png"style="height: 35px;" /></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="YM_Resume.pdf" target="_blank">Resume↗</a></li>
+        </ul>
+      </div>
+
+    <!-- Bundling Page Content -->
+
+    <!-- Cover Image -->
+
+    <div>
+        <img src="./Bundling/BundlingCover.png" style="width:100%; height:300px; object-fit: cover;" />
+    </div>
+    <div class="main_title">Streamlining the Bundling process to enhance visibility and reduce confusion.
+    </div>
+
+    <!-- Role, Team, Timeline-->
+    <div class="columns is-centered">
+        <div class="column is-narrow">
+            <div class="about_proj_title">Team
+                <div class="about_proj">Edward Holmes, Lead User Experience Designer
+                    <p>Jared Croft, Product Manager Intern</p>
+                    <p>Yolanda Jiang, UX Design Intern</p>
+                </div>
+            </div>
+        </div>
+        <div class="column is-narrow">
+            <div class="about_proj_title">Tools
+                <div class="about_proj">Adobe XD
+                    <p>ClickUp</p>
+                    <p>Google Suite</p>
+                </div>
+            </div>
+        </div>
+        <div class="column is-narrow">
+            <div class="about_proj_title" style="margin:0;">Timeline
+                <div class="about_proj">Summer 2022 - 10 weeks</div>
+            </div>
+        </div>
+    </div>
+
+    <!--Overview-->
+
+    <div class="section_title" style="color:#425CC7;">Overview</div>
+    <div class="normal_text">This summer, I worked with the UX, Product, and Engineering teams to design the flow of
+        resolving bundling issues on Pattern's internal software, Shelf - a AI-driven inventory management and logistics
+        solution for e-commerce, to decrease confusion of the bundling process.</div>
+    <div class="columns is-vcentered mt-6" style="background-color: #f7f7fe;">
+        <div class="column">
+            <div class="big_idea">What is a Bundle?</div>
+            <div class="big_idea" style="font-size:20px; margin-top:0vh;">
+                <li type="disk" style="list-style-position: outside;">Package of multiple products (aka components) sold
+                    together as a single unit
+                </li>
+                <li type="disk" style="list-style-position: outside;">Requires the warehouse to physically combine 1 or
+                    multiple SKUs/PNs (Stock-keeping unit/Part number)</li>
+            </div>
+        </div>
+        <div class="column is-narrow">
+            <img src="./Bundling/Boxes.png" style="width: 400px; margin-right:10vh; margin-top: 10vh;" />
+        </div>
+    </div>
+
+    <!--Problem-->
+
+    <div class="section_title" style="margin-right: 0vh;color:#425CC7;">The Problem</div>
+    <div class="normal_text">The current Bundling flow has no clear way of viewing and resolving ICQA (Inventory Control
+        and Quality Assurance) issues on the component level for bundles. This creates confusion in knowing what parts
+        of a bundle have an issue and what parts can be pulled to combine with other healthy bundles.
+    </div>
+    <img src="./Bundling/BundlingBefore.png"
+        style="width:600px; align-content:center; display: block; margin:auto; margin-top: 5vh; box-shadow: 0px 0px 10px rgb(186, 186, 186);" />
+
+    <!--Solution-->
+
+    <div class="big_idea" style="text-align: center;">My goal was to create a workflow designed to review and resolve
+        issues reported for bundles.
+    </div>
+    <img src="./Bundling/BundlingAfter.png"
+        style="width:800px; align-content:center; display: block; margin:auto; margin-top: 5vh; box-shadow: 0px 0px 10px rgb(186, 186, 186);" />
+
+    <!--Ideate-->
+
+    <div class="section_title" style="color:#425CC7">01. Discovery & Research</div>
+    <div class="normal_text">I first spent about a week setting up calls with the rest of my team to better understand
+        the task at hand and to learn the platform Shelf as a whole. This helped me grasp the design requirements, user
+        needs, and how the design integrates with the platform.</div>
+    <div style="background-color: #f7f7fe;">
+        <div class="columns is-vcentered mt-6">
+            <div class="column">
+                <div class="big_idea" style="text-align:right; margin-bottom: 2vh;">User Story</div>
+                <div class="big_idea" style="text-align:right; font-weight: 500; font-size: 22px; margin-top: 2vh;">
+                    <span style="font-weight: 550;">“</span>As a warehouse supervisor, I need to resolve ICQA's but it's
+                    <span style="color:#425CC7; font-weight: 550;">difficult to know what parts of the bundle have the
+                        issue,</span> and what
+                    other parts of the bundle I need to pull. I wish Shelf would <span
+                        style="color:#425CC7; font-weight: 550;">clearly tell me which parts have the issue and which
+                        are
+                        fine.</span>
+                </div>
+            </div>
+            <div class="column is-one-quarter is-narrow">
+                <img src="./Bundling/NomadsCat.png"
+                    style="width:300px; margin:auto; margin-top: 5vh; margin-right: 10vh;" />
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+            <div class="column is-one-quarter is-narrow">
+                <img src="./Bundling/bro.png"
+                    style="width:400px; margin:auto; margin-top: 5vh; margin-left: 10vh; margin-right: 2vh;" />
+            </div>
+            <div class="column">
+                <div class="big_idea" style="text-align:left; margin-bottom: 2vh;">Solution Requirements</div>
+                <div class="big_idea" style="text-align:left; font-weight: 500; font-size: 22px; margin-top: 2vh;">
+                    The ICQA resolution identifies the component with the issue. Shelf breaks the bundle into its
+                    parts, updates the status of the problematic product, and generates a *stow task for the "good"
+                    components. This allows healthy products to be moved and re-bundled for shipping.
+                </div>
+                <div class="normal_text"
+                    style="margin-top: 0vh; margin-bottom: 10vh; font-weight: 525; color: #425CC7;">*A stow task is
+                    created when components of a bundle have an issue, causing the
+                    issued and healthy products to be moved so that the healthy products can create bundles to be
+                    shipped.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="big_idea" style="text-align: center;">User Flow</div>
+    <img src="./Bundling/UserFlows.png"
+        style="width:300px; align-content:center; display: block; margin:auto; margin-top: 5vh; margin-bottom: 5vh; box-shadow: 0px 0px 10px rgb(186, 186, 186);" />
+
+    <!--First Iteration-->
+
+    <div class="section_title" style="color:#425CC7">02. First Iteration</div>
+    <div class="normal_text"> In my first iteration, I focused on understanding the task and brainstorming ways to
+        design the ICQA resolution flow. One idea was a pop-out drawer to maintain consistency with Shelf. While this
+        addressed the main issue of identifying problematic components, design refinement meetings with the lead UX
+        designer revealed additional issues that needed resolution.</div>
+    <div class="columns is-vcentered">
+        <div class="column is-narrow">
+            <img src="./Bundling/FirstIteration.png"
+                style="width:700px; margin:auto; margin-top: 5vh; margin-left: 10vh; box-shadow: 0px 0px 10px rgb(186, 186, 186);">
+        </div>
+        <div class="column ">
+            <div class="big_idea">&#9989; Enhancing the Reported Issue page to display bundles at the component level
+                for better insight and resolution.</div>
+            <div class="big_idea">&#10060; No organized context for the bundle and its issues.</div>
+        </div>
+    </div>
+
+    <div class="columns is-vcentered">
+        <div class="column">
+            <div class="big_idea">&#9989; Drawer showing components with reported quantities, inputs for actual issued
+                quantities, and remaining healthy quantities for added context.</div>
+            <div class="big_idea">&#10060; Lacks space for additional columns to provide more insight into each
+                component.</div>
+        </div>
+        <div class="column is-narrow">
+            <img src="./Bundling/FirstDrawer.png"
+                style="width:700px; margin:auto; margin-top: 5vh; margin-right: 10vh; box-shadow: 0px 0px 10px rgb(186, 186, 186);">
+        </div>
+    </div>
+
+    <!--Roadblock-->
+
+    <div style="background-color:#f7f7fe; padding-bottom: 0.5vh;">
+        <div class="section_title" style="color:#425CC7"><span style="font-size: 35px;">&#x1f4a5;</span> 03. Roadblock -
+            Understanding Stow Tasks<span style="font-size: 35px;">&#x1f4a5;</span></div>
+        <div class="normal_text" style="margin-bottom: 2vh;">Another issue that was brought up from the solution
+            requirements was including stow tasks in my design. However, I first had to understand what stow tasks were
+            and how they worked - which led to multiple meetings with the lead designer to whiteboard examples and fully
+            understand how I could incorporate stow tasks into my design.
+        </div>
+        <div class="big_idea" style="font-size:20px; margin-top:0vh;">
+            After resolving bundle issues, a stow task prompts users to move healthy and damaged
+            components to form new healthy bundles. My next goal was to display the number of stow tasks created
+            during this process.
+        </div>
+        <img src="./Bundling/Whiteboarding.png"
+            style="width:700px; align-content:center; display: block; margin:auto; margin-top: 5vh; margin-bottom: 5vh;" />
+        <div class="normal_text" style="text-align: center; margin-bottom: 5vh;">*Snapshot of whiteboarding to
+            understand the math behind
+            stow task creation</div>
+    </div>
+
+
+    <!--Second Iteration-->
+    <div class="section_title" style="color:#425CC7">04. Second Iteration</div>
+<div class="normal_text">By understanding stow tasks, I was able to brainstorm and incorporate ideas to improve visibility and integrate feedback from previous designs into my second iteration.</div>
+    <div class="columns is-vcentered">
+        <div class="column">
+            <div class="big_idea">&#9989; Dropdown on the first page shows associated bundle components and their
+                issues.</div>
+            <div class="big_idea">&#10060; This feature can be confusing and provide overwhelming information.</div>
+        </div>
+        <div class="column is-narrow">
+            <img src="./Bundling/SecondResolve.png"
+                style="width:700px; margin:auto; margin-top: 5vh; margin-right: 10vh; box-shadow: 0px 0px 10px rgb(186, 186, 186);">
+        </div>
+    </div>
+
+    <div class="columns is-vcentered">
+        <div class="column is-narrow">
+            <img src="./Bundling/SecondIter.gif"
+                style="width:700px; margin:auto; margin-top: 5vh; margin-left: 10vh; box-shadow: 0px 0px 10px rgb(186, 186, 186);">
+        </div>
+        <div class="column ">
+            <div class="big_idea">&#9989; A full-page issue resolution with essential columns, user input, and
+                hover-revealed healthy quantities and stow tasks.</div>
+            <div class="big_idea">&#10060; Simplify the stow task view by removing hover info icons
+                because only a maximum of 2 stow tasks are generated.</div>
+
+        </div>
+    </div>
+
+
+    <!--Final Design-->
+    <div class="section_title" style="color:#425CC7">05. Final Design</div>
+    <div class="normal_text">After multiple design iterations, I was able to finalize and present a design solution that
+        was simple yet optimal with input from both the design team and users.
+    </div>
+    <img src="./Bundling/FinalBundling.gif"
+        style="width:900px; align-content:center; display: block; margin:auto; margin-top: 10vh; margin-bottom: 5vh; box-shadow: 0px 0px 10px rgb(186, 186, 186);">
+
+    <div style="background-color:#f7f7fe; padding-bottom: 4vh;">
+        <div class="columns is-vcentered">
+            <div class="column is-narrow">
+                <img src="./Bundling/FinalICQA.png"
+                    style="width:700px; margin:auto; margin-top: 5vh; margin-left: 10vh; box-shadow: 0px 0px 10px rgb(186, 186, 186);">
+            </div>
+            <div class="column ">
+                <div class="big_idea"><span style="color:#425CC7;">Reported Issues</span>
+                    <p>Provides insight into bundles with issues and their specifics, while also displaying other
+                        products in the same warehouse location for additional context.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns is-vcentered">
+
+            <div class="column ">
+                <div class="big_idea"><span style="color:#425CC7">Resolving Page</span>
+                    <p>Multiple columns offer detailed information on reported issues for each component, enabling
+                        users to verify and understand the stow tasks created based on issue types and quantities.
+                    </p>
+                </div>
+            </div>
+            <div class="column is-narrow">
+                <img src="./Bundling/FinalResolve.png"
+                    style="width:700px; margin:auto; margin-top: 5vh; margin-right: 10vh; ">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--Business Impact-->
+    <div class="section_title" style="color:#425CC7">Business Impact</div>
+    <div class="normal_text">The Bundling design enhances issue visibility by detailing reported problems for
+        each bundle component. This reduces confusion in the bundling process, lowers warehouse labor costs,
+        ensures accurate customer orders, maintains good marketplace relationships, and facilitates warehouse
+        scaling.
+    </div>
+
+    <!--Reflection-->
+    <div class="section_title" style="color:#425CC7">Reflection</div>
+    <div class="normal_text">There was a learning curve with understanding the warehouse and how stow tasks are
+        formed on Shelf. While iterating my designs, I would often meet with the lead designer and product
+        manager to ask any questions and whiteboard the current process to make sure I could fully understand
+        the task at hand. My main learning through this project was to communicate effectively and not be afraid
+        to ask questions in order to ensure I could create the best design.</div>
+    <img src="./Bundling/paintCat.png"
+        style="width:250px; align-content:center; display: block; margin:auto; margin-top: 5vh; margin-bottom: 10vh;" />
+
+    <!--Prev and Next Buttons-->
+    <div class="columns mx-6 mb-6">
+        <div class="column is-one-quarter"></div>
+        <div class="column">
+            <button onclick="window.location.href = 'Support.html';" type="button" class="endButton"
+                style="background-color: #ffcfdc; border-color: #B7384D;">
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <img src="./Usage/btnSupport.png" style="height:150px; margin-top: 3.5vh;">
+                    </div>
+                    <div class="column">
+                        <div class="section_title"
+                            style="color:#B7384D; text-align: right; margin-top: 5vh; margin-right: 2.5vh;"> Previous
+                            Case
+                            Study </div>
+                        <div class="big_idea" style="text-align: right; margin-top: 2vh; margin-right: 2.5vh;">
+                            &larr;Support
+                            Revamp</div>
+                    </div>
+
+                </div>
+            </button>
+        </div>
+        <div class="column is-one-quarter"></div>
+    </div>
+
+    <!-- Page Footer -->
+
+    <div class="footerO">
+        <div class="columns is-vcentered">
+            <div class="column is-three-quarters ml-4" style="text-align:left;">
+                <div>
+                    <a href="https://www.linkedin.com/in/yukti-malhan/" target="_blank" style="margin-left: 20px;">
+                        <img width="40px" src="./Gifs&Icons/linkedin.png" alt="LinkedIn" />
+                    </a>
+                    <a href="https://github.com/ymalhan0" target="_blank" style="margin-left: 20px;">
+                        <img width="40px" src="./Gifs&Icons/github.svg.png" alt="Github" />
+                    </a>
+                    <a href="https://medium.com/@yuktimalhan" target="_blank" style="margin-left: 20px;">
+                        <img width="40px" src="./Gifs&Icons/medium.png" alt="Medium" />
+                    </a>
+                    <a href="https://www.instagram.com/pies_customs/" target="_blank" style="margin-left: 20px;">
+                        <img width="40px" src="./Gifs&Icons/insta.png" alt="Instagram" />
+                    </a>
+
+                </div>
+                <p style="margin-left: 20px; margin-top: 10px;;">yuktimalhan@gmail.com<br />
+                    This portfolio is best viewed on desktop<br />
+                    © yukti malhan 2023</p>
+            </div>
+            <div style="text-align:center; padding-right: 100px;">
+                <img width="350px" src="./Gifs&Icons/grundfooter.gif" />
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
