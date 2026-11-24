@@ -1,0 +1,104 @@
+html,
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #ffffff;
+    background-repeat: repeat;
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.main_title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 550;
+    font-size: 30px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    text-align: center;
+}
+
+.about_proj_title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 550;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #5c5c5c;
+    margin-right: 15vh;
+}
+
+.about_proj {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #5c5c5c;
+    margin-bottom: 5vh;
+}
+
+.big_idea {
+    font-family: 'Lato', sans-serif;
+    font-weight: 550;
+    font-size: 25px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+.section_title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 550;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-top: 10vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+.normal_text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-left: 10vh;
+    margin-right: 10vh;
+
+}
+
+.endButton {
+    border: 1px solid white;
+    background-color: white;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 18px;
+    border-radius: 15px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    width: 100%;
+
+}
+
+.endButton:hover {
+    box-shadow: 0px 0px 10px rgb(149, 149, 149);
+}
