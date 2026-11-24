@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+
+    <link rel="icon" type="image/png" href="./Gifs&Icons/grundLogo.png" />
+    <title>Yukti's UX Portfolio</title>
+
+
+    <meta charset="utf-8">
+
+
+    <link rel="stylesheet" href="./css/Landing.css">
+    <link rel="stylesheet" href="./css/Work.css">
+    <link rel="stylesheet" href="./css/bulma.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <!-- Page Header -->
+
+    <div class="header">
+        <a href="index.html"><img src="./Gifs&Icons/YM.png"style="height: 35px;" /></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="YM_Resume.pdf" target="_blank">Resume↗</a></li>
+        </ul>
+      </div>
+
+    <!-- Billing Page Content -->
+
+    <!-- Cover Image -->
+
+    <div>
+        <img src="./Billing/BillingCover.png" style="width:100%; height:300px; object-fit: cover;" />
+    </div>
+    <div class="main_title">Enahncing usability for residential agents accessing customer billing information.
+    </div>
+
+    <!-- Role, Team, Timeline-->
+    <div class="columns is-centered">
+        <div class="column is-narrow">
+            <div class="about_proj_title">Design Team
+                <div class="about_proj">Nancy Lam, Senior UX Designer
+                    <p>Andrhey Palos, Senior UX Designer</p>
+                    <p>Ashley Vallandingham, Principal UX Designer</p>
+                </div>
+            </div>
+        </div>
+        <div class="column is-narrow">
+            <div class="about_proj_title">Tools
+                <div class="about_proj">Figma
+                    <p>FigJam</p>
+                </div>
+            </div>
+        </div>
+        <div class="column is-narrow">
+            <div class="about_proj_title" style="margin:0;">Timeline
+                <div class="about_proj">Summer 2023 - 8 weeks</div>
+            </div>
+        </div>
+    </div>
+
+    <!--Overview-->
+
+    <div class="section_title" style="color:#D4A93B;">Overview</div>
+    <div class="normal_text">At Oracle, I was part of the Energy & Water GBU designing for the Customer Experience for
+        Utilities (CX4U) - Residential Call Center Agent Experience. This summer, I redesigned the billing tab for the
+        Agent experience, enabling access to key customer utility bill
+        data, such as bill amounts for each utility (electric, gas, water, etc.), current balance owed, and upcoming
+        bill schedules. My
+        role was to research and design innovative ways to update the system for residential agents.
+        <div class="section_title" style="color:#D4A93B;">Notable Definitions</div>
+        <div class="normal_text">
+            <span style="font-weight: 550;">Residential Agents = </span>handles incoming/outgoing calls for residential
+            customers
+            regarding electric/water/gas use and bills.
+            <p><span style="font-weight: 550;">KAM (Key Account Manager) = </span>work with a company + their biggest or
+                most important customers. </p>
+        </div>
+    </div>
+
+    <!--Problem-->
+
+    <div class="section_title" style="margin-right: 0vh;color:#D4A93B">The Problem</div>
+    <div class="normal_text" style="margin-bottom: 5vh;">After thorough research, I found a major issue for agents
+        trying to find and understand factors affecting billing amounts in multiple bills. The current process required
+        a repetitive, lengthy process of comparing individual bills without a consolidated view, leading to wasted time
+        and effort. Another problem was the lengthy process agents went through to check if customers were eligible for
+        any payment programs to help with their utility bills. However, due to time constraints, I had to shift focus
+        away from this issue in my design solutions.
+    </div>
+    <div style="background-color:#fdf7e7; padding-top: 0.5vh; padding-bottom: 0.5vh;">
+        <div class="big_idea">"As an agent, I need to learn about a customer's current bill status so that I can help a
+            customer know what to pay."</div>
+        <img src="./Billing/BillingBefore.png"
+            style="width:1000px; align-content:center; display: block; margin:auto; margin-top: 5vh;margin-bottom: 5vh; box-shadow: 0px 0px 10px rgb(186, 186, 186);" />
+        <div class="normal_text" style="text-align: center; margin-bottom: 5vh; margin-top: 3vh;">*An overview of the
+            agent
+            billing process</div>
+    </div>
+
+    <!--Solution-->
+    <div class="section_title" style="margin-right: 0vh;color:#D4A93B">The Solution</div>
+    <div class="big_idea" style="margin-top: 2vh;">To simplify bill comparisons, I proposed a system that allows agents
+        to compare two bills side-by-side on one screen, with key differences highlighted and an option to shuffle
+        between bills from different dates.
+    </div>
+    <img src="./Billing/FinalBilling.gif"
+        style="width:900px; align-content:center; display: block; margin:auto; margin-top: 5vh; margin-bottom: 5vh;box-shadow: 0px 0px 10px rgb(186, 186, 186);" />
+
+    <!--Design Process-->
+    <div style="background-color:#fdf7e7; padding-top: 0.5vh; padding-bottom: 0.5vh;">
+        <div class="section_title" style="margin-right: 0vh;color:#D4A93B">Process Overview</div>
+        <div class="big_idea" style="margin-top: 2vh;">Following the Redwood Design Process</div>
+        <div class="normal_text">This project was my first experience following a structured design process outside of
+            class projects, providing a valuable learning opportunity. After initial kickoff calls to align project
+            goals and gather existing data, I conducted sessions to create user goals, which helped define the problem
+            space and better understand agents and their objectives. I then developed "as-is" scripts to analyze the
+            current flow of billing-related inquiries. With a clearer understanding of the problem and pain points, I
+            created future scripts to brainstorm potential solutions and rough ideas before starting the design phase.
+            Throughout each step, I collaborated closely with the design team and stakeholders to gather feedback,
+            brainstorm, and iterate on ideas.</div>
+        <img src="./Billing/BillingProcessOverview.png"
+            style="width:1100px; align-content:center; display: block; margin:auto; margin-top: 5vh; margin-bottom: 5vh;" />
+    </div>
+
+    <!--Kickoff-->
+    <div class="section_title" style="color:#D4A93B">01. Project Kickoff</div>
+    <div class="big_idea" style="margin-top: 2vh;">Through kickoff calls with stakeholders, we decided to focus on
+        improving agent access to
+        billing information - aligning with objectives to enhance overall user efficiency and accessibility.</div>
+    <img src="./Billing/KickoffTakeaway.png"
+        style="width:500px; align-content:center; display: block; margin:auto; margin-top: 5vh; margin-bottom: 5vh;" />
+
+    <!--User Goals-->
+    <div class="section_title" style="color:#D4A93B">02. User Goals</div>
+    <div class="normal_text">To define the problem space, I hosted user goal sessions to understand agent needs
+        regarding the billing tab and outline common goals. This was my first meeting I led which was nerve-racking, but
+        I prepared thoroughly by reviewing existing information on agent demographics and higher-level user goals.
+        Organizing this information in a kickoff FigJam file provided the team with a clear review and focus,
+        facilitating the creation of user goals, and making discussions more efficient.</div>
+    <div class="big_idea" style="margin-top: 2vh;">I consolidated numerous goals into two main categories—factors
+        affecting billing amounts and payment programs—and used them to guide the analysis of current workflows and
+        identify pain points.</div>
+    <img src="./Billing/GoalsOutcome.png"
+        style="width:1100px; align-content:center; display: block; margin:auto; margin-top: 5vh; margin-bottom: 5vh;" />
+
+    <!--As-Is Scripts-->
+    <div class="section_title" style="color:#D4A93B">03. As-Is Scripts</div>
+    <div class="normal_text">I started by reviewing demo versions of the KAM billing designs and prior agent experiences
+        the redesign would be based off of. After mapping out their flow and functionalities through screenshots, I
+        drafted as-is scripts incorporating insights from prior interviews and the user goals sessions to identify pain
+        points and relevant scenarios. Through iterations and feedback, we found issues such as difficulty in comparing
+        bills and lengthy payment program eligibility checks.</div>
+    <img src="./Billing/AsIsScripts.png"
+        style="width:1300px; align-content:center; display: block; margin:auto; margin-top: 5vh; margin-bottom: 5vh;" />
+    <div class="big_idea">The scripts provided a clear understanding of current flows and pain points to focus on for
+        future scripts/design ideation.</div>
+    <img src="./Billing/AsIsTakeaway.png"
+        style="width:600px; align-content:center; display: block; margin:auto; margin-top: 5vh; margin-bottom: 5vh;" />
+
+    <!--Future Scripts-->
+    <div class="section_title" style="color:#D4A93B">04. Future Scripts</div>
+    <div class="normal_text">With a clearer understanding of the issues, the ideation phase began with future scripts
+        aimed at addressing defined pain points. One key focus was improving bill comparison, as agents found the
+        current process frustrating and time-consuming. I proposed a solution where agents could compare two bills
+        side-by-side on a single screen, with a highlights section outlining key differences and the ability to switch
+        between bills for quick reference. For the second goal of simplifying payment program enrollment, I initially
+        considered displaying only eligible plans but prioritized refining the bill comparison feature due to time
+        constraints.</div>
+    <img src="./Billing/FutureScripts.png"
+        style="width:1300px; align-content:center; display: block; margin:auto; margin-top: 5vh; margin-bottom: 5vh;" />
+    <div class="normal_text">The outcome was an innovative concept for bill comparison that received positive feedback
+        from the team. They expressed enthusiasm about its potential application beyond the Agent 2.0 experience,
+        suggesting it could be adapted for use in other contexts like KAM.</div>
+    <img src="./Billing/FutureTakeaway.png"
+        style="width:900px; align-content:center; display: block; margin:auto; margin-top: 5vh; margin-bottom: 5vh;" />
+    <div class="big_idea" style="text-align: center;">Having a clear solution in mind motivated the next step:
+        developing designs to visualize this
+        feature.</div>
+
+    <!--Designing-->
+    <div class="section_title" style="color:#D4A93B">05. Design Process</div>
+    <div class="normal_text">The design process began with inspiration from existing widgets from Oracle, adapted to
+        better suit the specific information needs of agents. I sketched out a basic layout of where this feature would
+        live and how it would function. Using Redwood components, I iterated through several design phases, gathering
+        feedback to refine the feature. This involved highlighting essential components and determining what information
+        was necessary or redundant for the agents' workflow.</div>
+    <div class="columns is-gapless">
+        <div class="column">
+            <img src="./Billing/Sketches.png"
+                style="width:500px; align-content:center; display: block; margin:auto; margin-top: 5vh; margin-bottom: 5vh;" />
+            <div class="normal_text" style="text-align: center;">Sketches for Billing Comparison</div>
+        </div>
+        <div class="column">
+            <img src="./Billing/widgetinspo.png"
+                style="width:500px; align-content:center; display: block; margin:auto; margin-top: 5vh; margin-bottom: 5vh;" />
+            <div class="normal_text" style="text-align: center;">Widget inspiration</div>
+        </div>
+    </div>
+
+    <!--Final Design-->
+    <div style="background-color:#fdf7e7; padding-top: 0.5vh; padding-bottom: 0.5vh;">
+        <div class="section_title" style="color:#D4A93B">06. Final Design</div>
+        <div class="normal_text">The final iteration lies within the financial history table as a “Compare Bill” button
+            which opens a drawer with the selected bill from the existing financial history table, allowing comparison
+            with
+            the previous bill or same bill from the previous year—a concept retained from the widget's design. The
+            interface
+            includes a segmented graph displaying charge differences from the selected timeframe, and comparison
+            highlights
+            focusing on rate changes, service additions, and payment plan changes. Users can drill down into specific
+            service types via dropdown or graph interaction, consistent with existing interactions across the page,
+            revealing detailed billing segments for deeper analysis. </div>
+        <div class="big_idea">This solution aims to enhance usability and efficiency while integrating with existing
+            workflows and offering potential for future expansion.</div>
+        <img src="./Billing/FinalBilling.gif"
+            style="width:1000px; align-content:center; display: block; margin:auto; margin-top: 5vh; margin-bottom: 5vh; box-shadow: 0px 0px 10px rgb(186, 186, 186);" />
+    </div>
+
+    <!--Reflection-->
+    <div class="section_title" style="color:#D4A93B">Reflection</div>
+    <div class="big_idea" style="margin-top: 1.5vh; margin-bottom: 2vh;">Learning Curve.</div>
+    <div class="normal_text">This was my first project I worked on during my time at Oracle which came with a learning
+        curve. Starting with minimal knowledge, I relied on introductory meetings and continuously asking questions to
+        understand the users and navigate terminology like OKRs, KPIs, etc. Familiarizing myself with Redwood components
+        and systems also took time, but having a supportive team always willing to help ensured I had the resources
+        needed to succeed.</div>
+    <div class="big_idea" style="margin-top: 1.5vh; margin-bottom: 2vh;">Navigating Time.</div>
+    <div class="normal_text">Time constraints were another hurdle, as I began this project four weeks into my 12
+        week internship. This limited timeframe sometimes left me feeling rushed, wishing for more exploration in
+        potential solutions, but despite this I'm proud of the progress made.</div>
+    <div class="big_idea" style="margin-top: 1.5vh; margin-bottom: 2vh;">Design as a Process.</div>
+    <div class="normal_text">One of the most significant takeaways was understanding design as a structured process.
+        Unlike my previous internships focused on iterative design, this experience emphasized problem definition
+        and user understanding as important steps before ideation. This created a solid foundation with data and
+        discussion about current workflows, user goals, and specific problems, which in turn made designing the
+        final feature much faster and with less to fix.</div>
+
+    <img src="./Billing/SweetCat.png"
+        style="width:250px; align-content:center; display: block; margin:auto; margin-top: 2vh; margin-bottom: 7vh;" />
+
+    <!--Prev and Next Buttons-->
+    <div class="columns mx-6 mb-6">
+        <div class="column is-one-quarter"></div>
+        <div class="column">
+            <button onclick="window.location.href = 'UsagePWD.html';" type="button" class="endButton"
+                style="background-color: #f3faf7; border-color: #6DA399;">
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <div class="section_title"
+                            style="color:#6DA399; text-align: left; margin-top: 5vh; margin-left: 2.5vh;"> Next Case
+                            Study </div>
+                        <div class="big_idea" style="text-align: left; margin-top: 2vh; margin-left: 2.5vh;"> CX4U Usage
+                            Tab &rarr; </div>
+                    </div>
+                    <div class="column">
+                        <img src="./Billing/btnUsage.png" style="height:150px; margin-top: 3.5vh;">
+                    </div>
+                </div>
+            </button>
+        </div>
+        <div class="column is-one-quarter"></div>
+
+
+    </div>
+
+
+    <!-- Page Footer -->
+
+    <div class="footerO">
+        <div class="columns is-vcentered">
+            <div class="column is-three-quarters ml-4" style="text-align:left;">
+                <div>
+                    <a href="https://www.linkedin.com/in/yukti-malhan/" target="_blank" style="margin-left: 20px;">
+                        <img width="40px" src="./Gifs&Icons/linkedin.png" alt="LinkedIn" />
+                    </a>
+                    <a href="https://github.com/ymalhan0" target="_blank" style="margin-left: 20px;">
+                        <img width="40px" src="./Gifs&Icons/github.svg.png" alt="Github" />
+                    </a>
+                    <a href="https://medium.com/@yuktimalhan" target="_blank" style="margin-left: 20px;">
+                        <img width="40px" src="./Gifs&Icons/medium.png" alt="Medium" />
+                    </a>
+                    <a href="https://www.instagram.com/pies_customs/" target="_blank" style="margin-left: 20px;">
+                        <img width="40px" src="./Gifs&Icons/insta.png" alt="Instagram" />
+                    </a>
+
+                </div>
+                <p style="margin-left: 20px; margin-top: 10px;;">yuktimalhan@gmail.com<br />
+                    This portfolio is best viewed on desktop<br />
+                    © yukti malhan 2023</p>
+            </div>
+            <div style="text-align:center; padding-right: 100px;">
+                <img width="350px" src="./Gifs&Icons/grundfooter.gif" />
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
