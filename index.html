@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yukti Malhan · Product Designer</title>
+<meta name="description" content="Product designer simplifying complex workflows, increasingly with AI in the loop.">
+<meta property="og:title" content="Yukti Malhan · Product Designer">
+<meta property="og:description" content="Product designer simplifying complex workflows, increasingly with AI in the loop.">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500&amp;family=Inter:wght@400;500;600&amp;family=Caveat:wght@600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FBF7F1}
+a{color:#A23A67}
+.paper{
+  background-color:#FBF7F1;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.45 0 0 0 0 0.36 0 0 0 0 0.34 0 0 0 0.06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23p)'/%3E%3C/svg%3E");
+}
+
+.layout{display:grid;grid-template-columns:40% 60%;align-items:start}
+.layout>*{min-width:0}
+/* torn binder paper */
+.left{--lh:clamp(32px,4.5vh,48px);--edge:16px;position:sticky;top:0;height:100vh;box-sizing:border-box;filter:drop-shadow(3px 0 4px rgba(90,60,70,0.10)) drop-shadow(10px 4px 18px rgba(90,60,70,0.08))}
+.left .binder,.left .fringe{position:absolute;inset:0;-webkit-mask:linear-gradient(#000,#000) left top/calc(100% - var(--edge)) 100% no-repeat,url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='140' preserveAspectRatio='none'%3E%3Cpath d='M0 0H9L5 6 11 11 4 17 8 22 3 29 12 33 6 40 10 46 2 52 9 57 5 64 13 69 7 75 4 81 11 86 6 93 10 98 3 104 12 109 5 116 9 121 4 127 10 132 6 140H0Z'/%3E%3C/svg%3E") right top/var(--edge) 140px repeat-y;mask:linear-gradient(#000,#000) left top/calc(100% - var(--edge)) 100% no-repeat,url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='140' preserveAspectRatio='none'%3E%3Cpath d='M0 0H9L5 6 11 11 4 17 8 22 3 29 12 33 6 40 10 46 2 52 9 57 5 64 13 69 7 75 4 81 11 86 6 93 10 98 3 104 12 109 5 116 9 121 4 127 10 132 6 140H0Z'/%3E%3C/svg%3E") right top/var(--edge) 140px repeat-y}
+.left .fringe{background:#FFFFFF;-webkit-mask-position:left top,right 0 top 37px;mask-position:left top,right 0 top 37px}
+.left .binder{right:4px;display:flex;flex-direction:column;box-sizing:border-box;padding:calc(var(--lh)*2) calc(var(--edge) + clamp(16px,2vw,32px)) var(--lh) calc(clamp(64px,6vw,92px) + clamp(16px,2vw,32px));align-items:center;text-align:center;
+  background-color:#FFFEFB;
+  background-image:linear-gradient(90deg,transparent clamp(64px,6vw,92px),#EEA9BC clamp(64px,6vw,92px),#EEA9BC calc(clamp(64px,6vw,92px) + 1.5px),transparent calc(clamp(64px,6vw,92px) + 1.5px)),repeating-linear-gradient(180deg,transparent 0,transparent calc(var(--lh) - 1px),#C9DCEE calc(var(--lh) - 1px),#C9DCEE var(--lh));
+  background-size:100% 100%,100% calc(100% - var(--lh)*2);background-position:0 0,0 calc(var(--lh)*2);background-repeat:no-repeat,no-repeat}
+.hole{position:absolute;left:clamp(22px,2.2vw,34px);width:clamp(18px,1.5vw,22px);aspect-ratio:1;border-radius:50%;transform:translateY(-50%);background:#FBF7F1;box-shadow:inset 1.5px 2px 3px rgba(80,55,60,0.22)}
+.lines{position:relative;z-index:1;width:100%;max-width:540px;display:flex;flex-direction:column;align-items:center}
+.intro{margin:0;font-size:calc(var(--lh)*0.6);color:#5A4950;max-width:25em;text-wrap:balance}
+.hl{position:relative;white-space:nowrap;color:#2B2126;font-weight:500}
+.hl svg{position:absolute;left:-2px;bottom:2px;width:calc(100% + 4px);height:0.45em;z-index:-1}
+.dot{width:7px;height:7px;border-radius:50%;background:#3B9468;display:inline-block;margin-right:5px;vertical-align:1px}
+.lines .ln{line-height:var(--lh)}
+.lines .ln2{line-height:calc(var(--lh)*2)}
+.notes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(8px,0.9vw,14px);margin:calc(var(--lh)*1) 0;height:calc(var(--lh)*4);width:100%;max-width:440px}
+.sticky{position:relative;display:flex;flex-direction:column;justify-content:center;gap:2px;padding:10px 10px;box-sizing:border-box;text-align:left;cursor:grab;outline:none;transform:rotate(var(--r));transform-origin:50% 0;box-shadow:0 1px 1px rgba(70,40,50,0.08),0 8px 14px -6px rgba(70,40,50,0.22);line-height:1.25;transition:transform .35s cubic-bezier(.3,1.6,.5,1),box-shadow .3s ease;animation:stick .7s cubic-bezier(.3,1.5,.5,1) var(--d) both}
+.sticky:hover,.sticky:focus-visible{transform:rotate(0deg) translateY(-6px) scale(1.06);z-index:2;box-shadow:0 2px 2px rgba(70,40,50,0.08),0 18px 24px -10px rgba(70,40,50,0.30)}
+.sticky:active{cursor:grabbing;transform:rotate(calc(var(--r) * -2)) translateY(-3px) scale(1.03)}
+.sticky:hover .tape{transform:translateX(-50%) rotate(-6deg) translateY(-2px)!important}
+.sticky:focus-visible{box-shadow:0 0 0 2px #A23A67,0 18px 24px -10px rgba(70,40,50,0.30)}
+@keyframes stick{0%{opacity:0;transform:rotate(calc(var(--r) * 4)) translateY(-14px) scale(.92)}100%{opacity:1;transform:rotate(var(--r))}}
+.sticky .tape{position:absolute;top:-8px;left:50%;width:46%;height:16px;background:rgba(255,255,255,0.6);box-shadow:0 0 0 0.5px rgba(160,130,140,0.15);transition:transform .3s ease}
+.sticky .nh{font-family:Caveat,cursive;font-size:clamp(17px,2.3vh,21px);font-weight:700;color:#A23A67;line-height:1}
+.sticky b{font-size:clamp(12.5px,1.75vh,15px);font-weight:600;color:#2B2126}
+.sticky .ns{font-size:clamp(11.5px,1.55vh,13px);color:#5C4A53}
+.pills{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;height:calc(var(--lh)*2)}
+.pill.cta{font-weight:600;box-shadow:0 6px 14px -6px rgba(162,58,103,0.55)}
+.pill.cta:hover{background:#8C2F58!important}
+.pill.cta span{transition:transform .2s ease}
+.pill.cta:hover span{transform:translate(2px,-2px)}
+.links{margin:0;display:flex;justify-content:center;gap:18px;font-size:calc(var(--lh)*0.5);flex:none}
+.links a{color:#6E5A63}
+.links a:hover{color:#A23A67}
+.scribble{position:absolute;z-index:3;top:calc(var(--lh)*0.35);right:calc(var(--edge) * -1 - 30px);display:flex;align-items:flex-start;gap:2px;font-family:Caveat,cursive;font-size:clamp(19px,2.5vh,24px);font-weight:700;color:#A23A67;text-decoration:none;transform:rotate(-3deg);white-space:nowrap}
+.scribble svg{margin-top:6px;animation:nudge 1.8s ease-in-out infinite}
+.scribble:hover span{text-decoration:underline wavy #E69AB4}
+@keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
+.pill{display:inline-flex;align-items:center;gap:8px;height:calc(var(--lh)*1.45);padding:0 clamp(16px,1.6vw,24px);border-radius:999px;font-size:clamp(14px,1.9vh,17px);font-weight:500;text-decoration:none;transition:transform .15s ease, background-color .15s ease}
+.pill:hover{transform:translateY(-2px)}
+.grund{position:relative;flex:1 1 auto;min-height:0;width:100%;max-width:440px;margin:calc(var(--lh)*0.5) 0 calc(var(--lh)*0.5);display:flex;flex-direction:column;align-items:center;justify-content:center}
+.grund img{display:block;flex:0 1 auto;min-height:0;max-width:min(100%,400px);width:auto;height:auto;object-fit:contain;object-position:center}
+.grund figcaption{order:-1;flex:none;display:flex;align-items:flex-end;gap:6px;margin:0 0 -4px 34%;font-family:Caveat,cursive;font-size:clamp(18px,2.4vh,22px);font-weight:700;color:#A23A67;transform:rotate(-4deg);white-space:nowrap}
+.scrollcue{position:fixed;z-index:5;bottom:22px;left:70%;transform:translateX(-50%);display:flex;align-items:center;gap:8px;padding:9px 16px 9px 18px;border-radius:999px;background:rgba(255,254,251,0.92);box-shadow:0 1px 2px rgba(70,40,50,0.08),0 10px 24px -10px rgba(70,40,50,0.35);font-size:14px;font-weight:500;color:#2B2126;text-decoration:none;white-space:nowrap;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.scrollcue b{font-family:Caveat,cursive;font-size:20px;font-weight:700;color:#A23A67}
+.scrollcue svg{animation:bob 1.6s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(-2px)}50%{transform:translateY(3px)}}
+html{scroll-behavior:smooth}
+.polaroid{scroll-margin-top:24px}
+.cue-c2,.cue-c3{display:none}
+@supports (view-timeline-name: --a) and (timeline-scope: --a){
+  .paper{timeline-scope:--c1,--c2,--c3,--c4}
+  .cue-c2,.cue-c3{display:flex}
+  .scrollcue{opacity:0;visibility:hidden;animation:cueon linear none;animation-range:contain 0% exit 80%}
+  .cue-c1{animation-timeline:--c1}.cue-c2{animation-timeline:--c2}.cue-c3{animation-timeline:--c3}
+  @keyframes cueon{0%,100%{opacity:1;visibility:visible}}
+}
+@media (prefers-reduced-motion: reduce){.sticky,.scrollcue,.scrollcue svg,.scribble svg{animation:none!important}}
+
+/* Grund sticker + quick facts (from the split version) */
+.lines{align-items:flex-start!important;text-align:left}
+.facts{display:flex;align-items:center;gap:clamp(18px,2vw,30px);margin:var(--lh) 0 calc(var(--lh)*2);height:calc(var(--lh)*4)}
+.sticker{position:relative;flex:none;margin:0}
+.sticker-disc{position:relative;width:calc(var(--lh)*4);aspect-ratio:1;border-radius:50%;background:#F9E3EA;border:clamp(5px,0.55vw,8px) solid #FFFFFF;box-sizing:border-box;overflow:hidden;transform:rotate(-7deg);filter:drop-shadow(0 1px 1px rgba(70,40,50,0.18)) drop-shadow(0 8px 12px rgba(70,40,50,0.18));transition:transform .4s cubic-bezier(.3,1.6,.5,1)}
+.sticker-disc img{width:100%;height:100%;object-fit:contain;display:block;transform:scale(0.94)}
+.sticker-disc::after{content:"";position:absolute;inset:0;border-radius:50%;background:linear-gradient(135deg,rgba(255,255,255,0.45) 0%,rgba(255,255,255,0) 38%);pointer-events:none}
+.sticker:hover .sticker-disc{transform:rotate(4deg) scale(1.05)}
+.sticker figcaption{font-family:Caveat,cursive;font-size:clamp(16px,2.2vh,19px);font-weight:700;color:#A23A67;line-height:1;transform:translateX(-50%) rotate(-3deg);white-space:normal;text-align:center;width:150px;position:absolute;left:50%;top:calc(100% + 6px)}
+.facts dl{margin:0;display:flex;flex-direction:column;min-width:0}
+.facts dl>div{display:flex;flex-direction:column}
+.facts dt{font-family:Caveat,cursive;font-size:calc(var(--lh)*0.62);font-weight:700;color:#A23A67;line-height:calc(var(--lh)*0.9)}
+.facts dd{margin:0;font-size:calc(var(--lh)*0.45);font-weight:600;color:#2B2126;line-height:calc(var(--lh)*1.1)}
+.facts dd span{display:block;font-weight:400;color:#6B5862;white-space:nowrap;line-height:calc(var(--lh)*0.9)}
+.pills{justify-content:flex-start!important}
+.spacer{flex:1 1 auto}
+.links{justify-content:flex-start!important;width:100%;max-width:540px}
+
+/* big intro title */
+.title{margin:0;font-family:'Bricolage Grotesque',Inter,sans-serif;font-weight:500;font-size:calc(var(--lh)*0.92);line-height:var(--lh);letter-spacing:-0.03em;color:#2B2126;text-align:left;position:relative;top:calc(var(--lh)*0.13)}
+.title .name{color:#A23A67}
+.title .hl svg{height:0.38em;bottom:0}
+.title .flower{color:#E69AB4;font-size:0.8em;display:inline-block;transform:rotate(-8deg);transition:transform .6s ease}
+.title:hover .flower{transform:rotate(172deg)}
+.title .spark{position:absolute;left:calc(var(--lh)*-0.95);top:calc(var(--lh)*-0.85);width:calc(var(--lh)*1.15);height:calc(var(--lh)*1.15)}
+.title .spark svg{width:100%;height:100%;display:block}
+/* lower the block so it sits centered on screen, snapped to the ruled lines */
+.left .binder{padding-top:calc(var(--lh)*5)}
+@supports (padding-top: round(down, 10px, 3px)){.left .binder{padding-top:max(calc(var(--lh)*2), round(down, calc((100vh - var(--lh)*14) / 2), var(--lh)))}}
+.pill.about{background:#F6D6E1!important;border:0!important;color:#7D2550!important;font-weight:600}
+.pill.about:hover{background:#F1C3D3!important}
+
+/* polaroid-style project stickers */
+.polaroid{display:flex;flex-direction:column;height:min(74vh,780px);min-height:460px;box-sizing:border-box;padding:clamp(12px,1.2vw,18px) clamp(12px,1.2vw,18px) 0;background:#FFFFFF;border-radius:4px;text-decoration:none;color:inherit;transform:rotate(var(--r));box-shadow:0 1px 2px rgba(70,40,50,0.10),0 14px 30px -12px rgba(70,40,50,0.28);transition:transform .35s cubic-bezier(.3,1.4,.5,1),box-shadow .3s ease}
+.polaroid:hover{transform:rotate(0deg) translateY(-4px);box-shadow:0 2px 3px rgba(70,40,50,0.10),0 26px 40px -16px rgba(70,40,50,0.34)}
+.polaroid .photo{position:relative;flex:1 1 auto;min-height:0;border-radius:2px;overflow:hidden;display:flex;align-items:center;justify-content:center;box-shadow:inset 0 0 0 1px rgba(120,70,90,0.07)}
+.polaroid .photo img{height:auto;max-height:80%;object-fit:contain;display:block;border-radius:4px;box-shadow:0 2px 4px rgba(60,30,40,0.12),0 22px 40px -16px rgba(60,30,40,0.34);transition:transform .4s ease}
+.polaroid:hover .photo img{transform:scale(1.015)}
+.tagrow{position:absolute;top:14px;left:16px;display:flex;align-items:center;gap:10px}
+.tagrow .num{font-family:Caveat,cursive;font-size:26px;font-weight:700;color:#A23A67;line-height:1}
+.tagrow .badge{padding:4px 11px;border-radius:999px;background:#FFFFFF;font-size:12px;font-weight:600;color:#A23A67}
+.pcap{flex:0 0 20%;min-height:96px;box-sizing:border-box;padding:clamp(12px,1.8vh,20px) clamp(4px,0.6vw,10px) clamp(12px,1.8vh,20px);display:flex;flex-direction:column;justify-content:center;gap:6px}
+.pname{margin:0;display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:13px;font-weight:600;color:#A23A67;letter-spacing:0.01em}
+.pname .go{font-weight:600;white-space:nowrap;transition:transform .2s ease}
+.polaroid:hover .pname .go{transform:translateX(3px)}
+.pq{margin:0;font-family:'Bricolage Grotesque',Inter,sans-serif;font-size:clamp(18px,min(1.55vw,2.6vh),24px);font-weight:500;line-height:1.3;letter-spacing:-0.012em;color:#2B2126;text-wrap:pretty}
+
+/* image area: the tinted mat with the taped screenshot, like before */
+.polaroid{padding:0!important;overflow:visible}
+.polaroid .photo{border-radius:4px 4px 0 0!important;box-shadow:none!important}
+.polaroid .photo{container-type:size}
+.polaroid .shot{position:relative;margin-top:18px}
+.polaroid .shot img{width:100%;height:auto;max-height:none;display:block;border-radius:4px;box-shadow:0 2px 4px rgba(60,30,40,0.14),0 24px 44px -16px rgba(60,30,40,0.38)}
+.polaroid .shot .tp{position:absolute;z-index:1;width:90px;height:24px}
+.polaroid .photo>img{display:none}
+.pcap{padding:clamp(14px,2vh,22px) clamp(18px,1.8vw,28px)!important}
+.pqrow{display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
+.pqrow .go{flex:none;font-size:14px;font-weight:600;color:#A23A67;white-space:nowrap;padding-bottom:3px;transition:transform .2s ease}
+.polaroid:hover .pqrow .go{transform:translateX(3px)}
+
+/* responsive card text: caption grows, photo shrinks; type follows card width */
+.polaroid{container-type:inline-size}
+.polaroid .pcap{flex:none!important;min-height:0!important}
+.polaroid .photo{min-height:180px}
+.polaroid .pq{font-size:clamp(16px,2.9cqw,23px)!important;line-height:1.3}
+@container (max-width: 640px){.polaroid .pqrow{flex-direction:column;align-items:flex-start;gap:8px}}
+/* pencil rule */
+.rule{height:2px;border:0;margin:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='2'%3E%3Cpath d='M0 1 C 60 0.3, 120 1.7, 180 0.8 S 260 1.4, 300 1' stroke='%23D8B9C4' stroke-width='1.3' fill='none'/%3E%3C/svg%3E");background-size:300px 2px;background-repeat:repeat-x}
+/* places marquee */
+.marquee{overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.track{display:flex;gap:56px;width:max-content;animation:slide 26s linear infinite}
+@keyframes slide{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.track{animation:none}}
+.work img{transition:transform .4s ease}
+.work:hover img{transform:scale(1.015)}
+.work:hover .cap{color:#A23A67}
+@media (max-width: 899px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  .left{position:relative;height:auto;--lh:34px}
+  .left .binder{position:relative;inset:auto;right:auto;padding-left:64px;padding-right:28px}
+  .notes{height:auto;display:flex;flex-wrap:wrap;justify-content:center;row-gap:16px}
+  .notes .sticky{width:calc(50% - 8px)}
+  .pill{padding:0 16px}
+  .pills{gap:8px}
+  .sticky{min-height:calc(var(--lh)*3.6)}
+  .pills{height:auto;padding:calc(var(--lh)*0.5) 0}
+  .grund{flex:none;height:280px}
+  .grund figcaption{margin-left:20%;white-space:normal}
+  .scribble{display:none}
+  .left .binder{padding-top:calc(var(--lh)*2)!important}
+  .title .spark{left:-26px}
+  .facts{flex-direction:column;align-items:flex-start;height:auto;margin-bottom:var(--lh)}
+  .sticker figcaption{position:static;transform:rotate(-3deg);margin-top:6px}
+  .spacer{flex:none;height:var(--lh)}
+  .scrollcue{left:50%}
+  .links{padding-bottom:var(--lh)}
+  .gl{white-space:normal!important;width:150px;line-height:1}
+  .mat{height:auto!important;min-height:0!important;aspect-ratio:4/3}
+  .polaroid{height:auto;min-height:0}
+  .polaroid .photo{flex:none;aspect-ratio:4/3}
+  .pqrow{flex-direction:column;align-items:flex-start;gap:8px}
+}
+
+/* keep the scribbled arrow above the scrolling work */
+@media (min-width: 900px){.layout>.left{z-index:6!important}}
+</style>
+</head>
+<body>
+<div class="paper" style="font-family: Inter, system-ui, sans-serif; color: #2B2126; min-height: 100vh">
+  <div class="layout">
+
+    <!-- LEFT: torn binder paper, fixed and always above the fold -->
+    <aside class="left">
+      <div class="fringe" aria-hidden="true"></div>
+      <div class="binder">
+        <span class="hole" style="top: 14%" aria-hidden="true"></span>
+        <span class="hole" style="top: 50%" aria-hidden="true"></span>
+        <span class="hole" style="top: 86%" aria-hidden="true"></span>
+
+        <div class="lines">
+          <h1 class="title"><span class="spark" aria-hidden="true"><svg viewBox="0 0 30 30" fill="none" stroke="#E07FA2" stroke-width="3.4" stroke-linecap="round"><path d="M9 19 2 16M13 11 9 3M21 9 24 1"></path></svg></span><span>Hi! I’m <span class="name">Yukti</span>, a product designer simplifying</span> <span class="hl">complex workflows<svg aria-hidden="true" viewBox="0 0 300 20" preserveAspectRatio="none"><path d="M4 12 C 60 5, 140 15, 296 8" stroke="#F6C6D5" stroke-width="9" stroke-linecap="round" fill="none"></path></svg></span><span>, increasingly with</span> <span style="white-space: nowrap"><span class="hl">AI in the loop<svg aria-hidden="true" viewBox="0 0 300 20" preserveAspectRatio="none"><path d="M4 12 C 60 5, 140 15, 296 8" stroke="#F6C6D5" stroke-width="9" stroke-linecap="round" fill="none"></path></svg></span> <span class="flower" aria-hidden="true">✿</span></span></h1>
+          <div class="facts">
+            <figure class="sticker">
+              <div class="sticker-disc"><img src="assets/img/grund-portrait.webp" alt="Illustrated portrait of Grund the cat"></div>
+              <figcaption>Grund, my design assistant</figcaption>
+            </figure>
+            <dl>
+              <div><div style="box-sizing: border-box; display: flex; flex-direction: column; gap: normal; justify-content: normal; align-items: normal"><dt>currently</dt><dd>UX Designer II at Oracle</dd></div></div>
+              <div><div style="box-sizing: border-box; display: flex; flex-direction: column; gap: normal; justify-content: normal; align-items: normal"><dt>i design for</dt><dd>B2B &amp; enterprise tools</dd></div></div>
+              <div></div>
+            </dl>
+          </div>
+
+          <div class="pills">
+            <a class="pill about" href="https://ymalhan0.github.io/portfolio-23/about.html" style="background: #F6D6E1; color: #7D2550">About me</a>
+            <a class="pill cta" href="assets/YM_Resume.pdf" target="_blank" rel="noopener" style="background: #A23A67; color: #FFFFFF">View my resume <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <span class="spacer" aria-hidden="true"></span>
+
+        <p class="ln links">
+          <a href="https://www.linkedin.com/in/yukti-malhan/">LinkedIn</a>
+          <a href="https://medium.com/@yuktimalhan">Medium</a>
+          <a href="https://github.com/ymalhan0">GitHub</a>
+          <a href="mailto:yuktimalhan@gmail.com">Email</a>
+        </p>
+      </div>
+
+      <!-- scribbled pointer to the work -->
+      <a class="scribble" href="#work" style="right: -15px; top: 38px; position: absolute"><span>check out my work!&nbsp;</span><svg width="64" height="34" viewBox="0 0 64 34" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="z-index: 1; width: 48px"><path d="M2 8C14 2 22 14 14 18C7 21 8 9 20 10C34 11 44 24 60 24"></path><path d="M52 17l8 7-9 5"></path></svg></a>
+    </aside>
+
+    <!-- RIGHT: work, one big mounted image per project -->
+    <a class="scrollcue cue-c1" href="#work-2" aria-label="Scroll to the next project">More projects <svg width="14" height="16" viewBox="0 0 14 16" fill="none" stroke="#A23A67" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 1v13M1 8l6 6 6-6"></path></svg></a>
+    <a class="scrollcue cue-c2" href="#work-3" aria-label="Scroll to the next project">More projects <svg width="14" height="16" viewBox="0 0 14 16" fill="none" stroke="#A23A67" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 1v13M1 8l6 6 6-6"></path></svg></a>
+    <a class="scrollcue cue-c3" href="#work-4" aria-label="Scroll to the next project">More projects <svg width="14" height="16" viewBox="0 0 14 16" fill="none" stroke="#A23A67" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 1v13M1 8l6 6 6-6"></path></svg></a>
+    <main id="work" aria-label="Selected work" style="padding: clamp(28px, 5.5vh, 56px) clamp(20px, 3vw, 48px) 48px clamp(10px, 1.6vw, 24px); display: flex; flex-direction: column; gap: clamp(36px, 6vh, 64px)">
+
+      <a href="compliance.html" id="work-1" class="work polaroid" style="--r: -0.7deg; view-timeline-name: --c1">
+        <div class="photo" style="background: #0E3445 url(assets/img/card-compliance-bg.webp) center / cover no-repeat">
+          <div class="tagrow" aria-hidden="true" style="z-index: 3"><span class="badge">Oracle · 2026 · Dev In Progress</span></div>
+          <div class="shot" style="width: min(94%, calc((100cqh - 64px) * 1.852)); max-width: 100%; margin-top: 36px"><img src="assets/img/card-compliance-laptop.webp" style="box-shadow: none; border-radius: 0; filter: drop-shadow(0 24px 30px rgba(0,0,0,0.35))" alt="Laptop showing a low-fidelity version of the Riverside inspection plan screen"></div>
+        </div>
+        <div class="pcap">
+          <p class="pname">Utility Regulatory Compliance</p>
+          <div class="pqrow"><p class="pq" style="position: static">How do utilities stay up to code, while navigating disruptions and deadlines?</p></div>
+        </div>
+      </a>
+
+      <a href="https://ymalhan0.github.io/portfolio-23/BillingPWD.html" id="work-2" class="work polaroid" style="--r: 0.6deg; view-timeline-name: --c2">
+        <div class="photo" style="background: linear-gradient(120deg, #FFE5B8 0%, #FFEFC6 45%, #FFF8D2 100%)">
+          <div class="tagrow" aria-hidden="true" style="z-index: 3"><span class="badge">Oracle · 2023 · Concept</span></div>
+          <div class="shot" style="width: min(94%, calc((100cqh - 64px) * 1.718)); max-width: 100%; margin-top: 36px"><img src="assets/img/card-billing-laptop.webp" style="box-shadow: none; border-radius: 0; filter: drop-shadow(0 22px 26px rgba(120,80,20,0.22))" alt="Laptop showing the final CX4U Billing tab: billing history chart and billing highlights"></div>
+        </div>
+        <div class="pcap">
+          <p class="pname">CX4U Billing</p>
+          <div class="pqrow"><p class="pq">How can call-center representatives answer&nbsp;<span style="letter-spacing: -0.276px">“Why is my bill higher?”</span>, while the customer is still on the line?</p></div>
+        </div>
+      </a>
+
+      <a href="https://ymalhan0.github.io/portfolio-23/Support.html" id="work-3" class="work polaroid" style="--r: -0.5deg; view-timeline-name: --c3">
+        <div class="photo" style="background: linear-gradient(135deg, #F3DCC6 0%, #F7B3A0 40%, #EC8C95 72%, #DC6A83 100%)">
+          <div class="tagrow" aria-hidden="true" style="z-index: 3"><span class="badge">Pattern · 2022 · Shipped</span></div>
+          <div class="shot" style="width: min(90%, calc((100cqh - 64px) * 1.67)); max-width: 100%; margin-top: 36px"><img src="assets/img/card-support-screen.webp" alt="Support Revamp project: help center user guides with a Looking for something else support form" style="width: 100%; height: auto; border-radius: 3px; box-shadow: none; filter: drop-shadow(0 18px 26px rgba(120,40,60,0.28))"></div>
+        </div>
+        <div class="pcap">
+          <p class="pname">Support Revamp</p>
+          <div class="pqrow"><p class="pq">How can brand managers be best supported in learning and navigating an ecommerce solution?</p></div>
+        </div>
+      </a>
+
+      <a href="https://ymalhan0.github.io/portfolio-23/Bundling.html" id="work-4" class="work polaroid" style="--r: 0.7deg; view-timeline-name: --c4">
+        <div class="photo" style="background: linear-gradient(160deg, #93C6E7 0%, #74AADD 45%, #4A86CC 80%, #3A76C4 100%)">
+          <div class="tagrow" aria-hidden="true" style="z-index: 3"><span class="badge">Pattern · 2022 · Shipped</span></div>
+          <div class="shot" style="width: min(90%, calc((100cqh - 64px) * 1.518)); max-width: 100%; margin-top: 36px"><img src="assets/img/card-bundling-screen.webp" alt="Bundling 2.0 project: resolving a bundle with 4 components to review" style="width: 100%; height: auto; border-radius: 3px; box-shadow: none; filter: drop-shadow(0 18px 26px rgba(20,40,110,0.30))"></div>
+        </div>
+        <div class="pcap">
+          <p class="pname">Bundling 2.0</p>
+          <div class="pqrow"><p class="pq">How can warehouse workers resolve inventory issues when only parts of a product bundle are affected?</p></div>
+        </div>
+      </a>
+
+      <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; padding-top: 22px; border-top: 1px dashed #E3C7D1; font-size: 15px; color: #5A4950">
+        <p style="margin: 0">Check out my&nbsp;<a href="https://medium.com/@yuktimalhan" style="font-weight: 500">Medium ↗</a>&nbsp;for more work!</p>
+        <p style="margin: 0; display: flex; align-items: center; gap: 10px"><span style="font-family: Caveat, cursive; font-size: 21px; font-weight: 700; color: #A23A67">thanks for stopping by!</span><span style="color: #8A7480">© 2026</span></p>
+      </div>
+    </main>
+  </div>
+</div>
+</body>
+</html>
